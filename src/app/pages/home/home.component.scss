@@ -1,0 +1,49 @@
+app-menu-bar {
+  position: sticky;
+  top: 0;
+}
+main {
+  max-width: 1440px;
+  margin: 0 auto 4.0rem;
+  padding: 0 3.2rem;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    padding: 0 1.6rem;
+  }
+
+  .container__articles {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 6.4rem;
+    margin-top: 5.6rem;
+
+    .articles__main {
+      width: 70%;
+    }
+    .articles__side {
+      hr {
+        margin: 3.2rem 0;
+        background-color: #2b2b2b;
+      }
+    }
+  }
+}
+
+footer {
+  p {
+    font-weight: 500;
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 4.0rem;
+    color: #575757;
+
+    a {
+      color: inherit;
+      &:hover {
+        opacity: .8;
+      }
+    }
+  }
+}
