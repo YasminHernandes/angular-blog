@@ -10,6 +10,9 @@ import { SmallCardComponent } from './components/small-card/small-card.component
 import { HttpClientModule } from '@angular/common/http';
 import { AngularSvgIconModule } from 'angular-svg-icon';
 import { HomeComponent } from './pages/home/home.component';
+import PostComponent from './pages/post/post.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { BackButtonComponent } from './components/back-button/back-button.component';
 
 @NgModule({
   declarations: [
@@ -19,10 +22,13 @@ import { HomeComponent } from './pages/home/home.component';
     LargeCardComponent,
     SmallCardComponent,
     HomeComponent,
+    PostComponent,
+    FooterComponent,
+    BackButtonComponent,
   ],
   imports: [
-    BrowserModule,
     AppRoutingModule,
+    BrowserModule,
     HttpClientModule,
     AngularSvgIconModule.forRoot(),
   ],
