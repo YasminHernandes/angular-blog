@@ -18,6 +18,10 @@ li {
 a {
   text-decoration: none;
   cursor: pointer;
+
+  &:hover {
+    opacity: .8;
+  }
 }
 
 hr {

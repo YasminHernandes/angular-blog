@@ -1,9 +1,9 @@
 <section class="container">
-  <img src="https://blog.iprocess.com.br/wp-content/uploads/2021/11/placeholder.png" alt="image placeholder">
+  <img src={{photoCover}} alt="image placeholder">
   <div class="container__title">
-    <span class="date">January 11, 2022</span>
-    <a href="" class="card__title">
-      Commodo labore in dolore est sunt labore labore sunt
+    <span class="date">{{cardDate}}</span>
+    <a [routerLink]="['post', Id]" class="card__title">
+      {{cardTitle}}
     </a>
   </div>
  </section>
